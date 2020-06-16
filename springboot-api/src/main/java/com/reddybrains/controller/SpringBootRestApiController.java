@@ -31,7 +31,7 @@ public class SpringBootRestApiController {
 	}
 	
 	@RequestMapping(value = "/employee/{id}", method = RequestMethod.GET)
-	public SpringBootRestApiForm saveEmplee(@PathVariable Long id) {
+	public SpringBootRestApiForm getEmplee(@PathVariable Long id) {
 		System.out.println("Controller Name");
 		return service.getEmployee(id);
 
